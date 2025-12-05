@@ -1,5 +1,5 @@
-/* Sign In Page Styles */
-.signin-page {
+/* Book a Demo Page Styles */
+.demo-page {
     display: flex;
     width: 100%;
     min-height: 100vh;
@@ -7,7 +7,7 @@
 }
 
 /* Left Side - Hero Section */
-.signin-hero {
+.demo-hero {
     flex: 1;
     background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
     position: relative;
@@ -19,7 +19,7 @@
 }
 
 /* Add decorative pattern overlay */
-.signin-hero::before {
+.demo-hero::before {
     content: '';
     position: absolute;
     top: 0;
@@ -33,7 +33,7 @@
     opacity: 0.6;
 }
 
-.hero-overlay {
+.demo-hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -43,7 +43,7 @@
     z-index: 1;
 }
 
-.hero-content {
+.demo-hero-content {
     position: relative;
     z-index: 2;
     display: flex;
@@ -51,7 +51,7 @@
     height: 100%;
 }
 
-.back-link {
+.demo-back-link {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -63,20 +63,20 @@
     width: fit-content;
 }
 
-.back-link:hover {
+.demo-back-link:hover {
     opacity: 0.8;
     transform: translateX(-4px);
 }
 
-.back-link svg {
+.demo-back-link svg {
     transition: transform 0.3s ease;
 }
 
-.back-link:hover svg {
+.demo-back-link:hover svg {
     transform: translateX(-4px);
 }
 
-.hero-text {
+.demo-hero-text {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -85,7 +85,7 @@
     margin: auto 0;
 }
 
-.hero-text h1 {
+.demo-hero-text h1 {
     font-size: 2.75rem;
     font-weight: 700;
     line-height: 1.2;
@@ -93,17 +93,17 @@
     font-family: 'Manrope', sans-serif;
 }
 
-.hero-text .highlight {
+.demo-highlight {
     color: #10b981;
 }
 
-.features-list {
+.demo-features-list {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
 }
 
-.feature-item {
+.demo-feature-item {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -111,13 +111,13 @@
     font-weight: 500;
 }
 
-.feature-item svg {
+.demo-feature-item svg {
     flex-shrink: 0;
     color: #10b981;
 }
 
 /* Right Side - Form Section */
-.signin-form-wrapper {
+.demo-form-wrapper {
     flex: 0 0 45%;
     max-width: 600px;
     background: white;
@@ -125,27 +125,28 @@
     align-items: center;
     justify-content: center;
     padding: 3rem 2rem;
+    overflow-y: auto;
 }
 
-.signin-form-container {
+.demo-form-container {
     width: 100%;
     max-width: 450px;
 }
 
 /* Logo */
-.signin-logo {
+.demo-logo {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.75rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
-.signin-logo svg {
+.demo-logo svg {
     filter: drop-shadow(0 4px 12px rgba(16, 185, 129, 0.3));
 }
 
-.logo-text {
+.demo-logo-text {
     font-size: 0.875rem;
     font-weight: 700;
     letter-spacing: 2px;
@@ -153,43 +154,56 @@
 }
 
 /* Welcome Text */
-.signin-welcome {
+.demo-welcome {
     text-align: center;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
-.welcome-text {
+.demo-welcome-text {
     font-size: 0.9375rem;
     color: #6b7280;
     margin-bottom: 0.75rem;
 }
 
-.brand-name {
+.demo-brand-name {
     font-weight: 700;
     color: #047857;
 }
 
-.signin-title {
+.demo-title {
     font-size: 2rem;
     font-weight: 700;
     color: #111827;
     font-family: 'Manrope', sans-serif;
+    margin: 0 0 0.75rem 0;
+}
+
+.demo-description {
+    font-size: 0.9375rem;
+    color: #047857;
     margin: 0;
 }
 
 /* Form Styles */
-.signin-form {
+.demo-form {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.25rem;
 }
 
-.form-group {
+.demo-form-group {
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
 }
 
-.form-input {
+.demo-form-group label {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #374151;
+}
+
+.demo-form-input {
     width: 100%;
     padding: 0.875rem 1.125rem;
     border: 2px solid #e5e7eb;
@@ -201,72 +215,23 @@
     color: #374151;
 }
 
-.form-input:focus {
+.demo-form-input:focus {
     outline: none;
     border-color: #10b981;
     box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
 }
 
-.form-input::placeholder {
+.demo-form-input::placeholder {
     color: #9ca3af;
 }
 
-/* Password Input */
-.password-input-wrapper {
-    position: relative;
-    width: 100%;
+.demo-form-textarea {
+    resize: vertical;
+    min-height: 100px;
 }
 
-.password-input-wrapper .form-input {
-    padding-right: 3rem;
-}
-
-.password-toggle {
-    position: absolute;
-    right: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #9ca3af;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.25rem;
-    transition: color 0.3s ease;
-}
-
-.password-toggle:hover {
-    color: #047857;
-}
-
-.password-toggle svg {
-    width: 20px;
-    height: 20px;
-}
-
-/* Forgot Password */
-.forgot-password {
-    text-align: right;
-    margin-top: -0.5rem;
-}
-
-.forgot-link {
-    font-size: 0.875rem;
-    color: #047857;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-.forgot-link:hover {
-    color: #059669;
-    text-decoration: underline;
-}
-
-/* Continue Button */
-.continue-btn {
+/* Submit Button */
+.demo-submit-btn {
     width: 100%;
     background: linear-gradient(135deg, #059669, #10b981);
     color: white;
@@ -280,132 +245,129 @@
     font-family: 'Inter', sans-serif;
     box-shadow: 0 8px 24px rgba(5, 150, 105, 0.3);
     margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
 }
 
-.continue-btn:hover {
+.demo-submit-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 12px 32px rgba(5, 150, 105, 0.4);
 }
 
-.continue-btn:active {
+.demo-submit-btn:active {
     transform: translateY(0);
 }
 
-/* Sign Up Link */
-.signup-link {
-    text-align: center;
-    font-size: 0.9375rem;
-    color: #6b7280;
+.demo-submit-btn svg {
+    transition: transform 0.3s ease;
 }
 
-.signup-link-text {
-    color: #047857;
-    font-weight: 600;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.signup-link-text:hover {
-    color: #059669;
-    text-decoration: underline;
+.demo-submit-btn:hover svg {
+    transform: translateX(4px);
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .signin-hero {
+    .demo-hero {
         flex: 1;
     }
 
-    .signin-form-wrapper {
+    .demo-form-wrapper {
         flex: 0 0 50%;
     }
 
-    .hero-text h1 {
+    .demo-hero-text h1 {
         font-size: 2.25rem;
     }
 }
 
 @media (max-width: 768px) {
-    .signin-page {
+    .demo-page {
         flex-direction: column;
     }
 
-    .signin-hero {
+    .demo-hero {
         min-height: 50vh;
         padding: 1.5rem;
     }
 
-    .hero-text {
+    .demo-hero-text {
         max-width: 100%;
     }
 
-    .hero-text h1 {
+    .demo-hero-text h1 {
         font-size: 1.875rem;
         margin-bottom: 2rem;
     }
 
-    .feature-item {
+    .demo-feature-item {
         font-size: 1rem;
     }
 
-    .signin-form-wrapper {
+    .demo-form-wrapper {
         flex: auto;
         max-width: 100%;
         padding: 2rem 1.5rem;
     }
 
-    .signin-title {
+    .demo-title {
         font-size: 1.75rem;
     }
 }
 
 @media (max-width: 480px) {
-    .signin-hero {
+    .demo-hero {
         min-height: 40vh;
         padding: 1rem;
     }
 
-    .hero-text h1 {
+    .demo-hero-text h1 {
         font-size: 1.5rem;
         margin-bottom: 1.5rem;
     }
 
-    .features-list {
+    .demo-features-list {
         gap: 1rem;
     }
 
-    .feature-item {
+    .demo-feature-item {
         font-size: 0.9375rem;
     }
 
-    .signin-form-wrapper {
+    .demo-form-wrapper {
         padding: 1.5rem 1rem;
     }
 
-    .signin-logo {
-        margin-bottom: 2rem;
+    .demo-logo {
+        margin-bottom: 1.5rem;
     }
 
-    .signin-logo svg {
+    .demo-logo svg {
         width: 40px;
         height: 40px;
     }
 
-    .signin-welcome {
-        margin-bottom: 2rem;
+    .demo-welcome {
+        margin-bottom: 1.5rem;
     }
 
-    .signin-title {
+    .demo-title {
         font-size: 1.5rem;
     }
 
-    .form-input {
+    .demo-form-input {
         padding: 0.75rem 1rem;
         font-size: 0.9375rem;
     }
 
-    .continue-btn {
+    .demo-submit-btn {
         padding: 0.875rem;
         font-size: 1rem;
+    }
+
+    .demo-form {
+        gap: 1rem;
     }
 }

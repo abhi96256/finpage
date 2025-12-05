@@ -62,8 +62,8 @@ const Navbar = () => {
                     </div>
 
                     <div className="nav-actions">
-                        <button className="btn-sign-in">Sign In</button>
-                        <button className="btn-book-demo">Book a Demo</button>
+                        <Link to="/signin" className="btn-sign-in">Sign In</Link>
+                        <Link to="/book-demo" className="btn-book-demo">Book a Demo</Link>
                     </div>
 
                     <button
