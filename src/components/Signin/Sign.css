@@ -40,6 +40,7 @@
     right: 0;
     bottom: 0;
     background: linear-gradient(135deg, rgba(30, 41, 59, 0.3), rgba(51, 65, 85, 0.2));
+
     z-index: 1;
 }
 
