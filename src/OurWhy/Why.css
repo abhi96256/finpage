@@ -1,0 +1,613 @@
+/* Our Why Page Styles */
+.our-why-page {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Top Banner - Same as Our Impact */
+.top-banner {
+    background: linear-gradient(90deg, #047857, #059669);
+    padding: 0.875rem 0;
+    position: relative;
+    z-index: 100;
+}
+
+.banner-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.banner-text {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+}
+
+.download-guide-btn {
+    background: white;
+    color: #059669;
+    border: none;
+    padding: 0.625rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.download-guide-btn:hover {
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.download-guide-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.download-guide-btn:hover svg {
+    transform: translateX(4px);
+}
+
+/* Hero Section */
+.why-hero {
+    background: linear-gradient(180deg, #e0f2f1 0%, #f0fdf4 100%);
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.why-title {
+    font-size: 3.75rem;
+    font-weight: 700;
+    color: #047857;
+    margin-bottom: 1.5rem;
+    line-height: 1.15;
+    font-family: 'Manrope', sans-serif;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.why-description {
+    font-size: 1.25rem;
+    color: #065f46;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Section Header */
+.section-header {
+    margin-bottom: 3rem;
+}
+
+.section-header.center {
+    text-align: center;
+}
+
+.section-label {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #059669;
+    background: #ecfdf5;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.section-title {
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: #047857;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    font-family: 'Manrope', sans-serif;
+}
+
+.section-subtitle {
+    font-size: 1.125rem;
+    color: #6b7280;
+    max-width: 700px;
+    margin-top: 1rem;
+    line-height: 1.7;
+    font-family: 'Inter', sans-serif;
+}
+
+.section-header.center .section-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Problem Section */
+.problem-section {
+    padding: 6rem 0;
+    background: white;
+}
+
+.stats-grid-large {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 2px solid #d1fae5;
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+    border-color: #10b981;
+}
+
+.stat-number-large {
+    font-size: 4rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #047857, #10b981);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+    font-family: 'Manrope', sans-serif;
+}
+
+.stat-description {
+    font-size: 1.125rem;
+    color: #374151;
+    line-height: 1.6;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Solution Section */
+.solution-section {
+    padding: 6rem 0;
+    background: linear-gradient(180deg, #f9fafb 0%, #ffffff 100%);
+}
+
+.solution-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.solution-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.solution-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+    border-color: #10b981;
+}
+
+.solution-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.solution-card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #047857;
+    margin-bottom: 1rem;
+    font-family: 'Manrope', sans-serif;
+}
+
+.solution-card-description {
+    font-size: 1rem;
+    color: #6b7280;
+    line-height: 1.7;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Story Section */
+.story-section {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #e0f2f1 0%, #f0fdf4 100%);
+}
+
+.story-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.story-image {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
+}
+
+.story-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.story-image:hover img {
+    transform: scale(1.05);
+}
+
+.story-text {
+    padding: 2rem 0;
+}
+
+.story-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #047857;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    line-height: 1.3;
+    font-family: 'Manrope', sans-serif;
+}
+
+.story-description {
+    font-size: 1.0625rem;
+    color: #374151;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Team Section */
+.team-section {
+    padding: 6rem 0;
+    background: white;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.team-card {
+    text-align: center;
+    background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 2px solid #d1fae5;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+.team-image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #10b981;
+    box-shadow: 0 8px 24px rgba(16, 185, 129, 0.2);
+}
+
+.team-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #047857;
+    margin-bottom: 0.5rem;
+    font-family: 'Manrope', sans-serif;
+}
+
+.team-role {
+    font-size: 1rem;
+    color: #059669;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.team-bio {
+    font-size: 0.9375rem;
+    color: #6b7280;
+    line-height: 1.6;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Open Roles Section */
+.roles-section {
+    padding: 6rem 0;
+    background: linear-gradient(180deg, #f9fafb 0%, #ffffff 100%);
+}
+
+.roles-content.center {
+    text-align: center;
+}
+
+.roles-description {
+    font-size: 1.125rem;
+    color: #6b7280;
+    max-width: 700px;
+    margin: 1rem auto 3rem;
+    line-height: 1.7;
+    font-family: 'Inter', sans-serif;
+}
+
+.roles-list {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.role-item {
+    background: white;
+    padding: 2rem 2.5rem;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.role-item:hover {
+    transform: translateX(8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border-color: #10b981;
+}
+
+.role-info {
+    text-align: left;
+}
+
+.role-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #047857;
+    margin-bottom: 0.5rem;
+    font-family: 'Manrope', sans-serif;
+}
+
+.role-location {
+    font-size: 0.9375rem;
+    color: #6b7280;
+    font-family: 'Inter', sans-serif;
+}
+
+.role-apply-btn {
+    background: linear-gradient(135deg, #059669, #10b981);
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 4px 12px rgba(5, 150, 105, 0.2);
+}
+
+.role-apply-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(5, 150, 105, 0.3);
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #047857 0%, #059669 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.3;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-title {
+    font-size: 3.25rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    font-family: 'Manrope', sans-serif;
+}
+
+.cta-description {
+    font-size: 1.25rem;
+    color: #d1fae5;
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+    font-family: 'Inter', sans-serif;
+}
+
+.cta-button {
+    background: white;
+    color: #047857;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.125rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+    background: #f0fdf4;
+}
+
+.cta-button svg {
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover svg {
+    transform: translateX(6px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .why-title {
+        font-size: 3rem;
+    }
+
+    .stats-grid-large {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .solution-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .story-content-wrapper {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .why-hero {
+        padding: 4rem 0;
+    }
+
+    .why-title {
+        font-size: 2.25rem;
+    }
+
+    .why-description {
+        font-size: 1.125rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .stats-grid-large {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .stat-number-large {
+        font-size: 3rem;
+    }
+
+    .solution-cards {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .role-item {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .role-info {
+        text-align: center;
+    }
+
+    .role-apply-btn {
+        width: 100%;
+    }
+
+    .cta-title {
+        font-size: 2rem;
+    }
+
+    .cta-description {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .why-title {
+        font-size: 1.875rem;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .stat-number-large {
+        font-size: 2.5rem;
+    }
+
+    .story-title {
+        font-size: 1.75rem;
+    }
+}

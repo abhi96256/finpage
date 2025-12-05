@@ -1,0 +1,524 @@
+/* Our Impact Page Styles */
+.our-impact-page {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Top Banner */
+.top-banner {
+    background: linear-gradient(90deg, #047857, #059669);
+    padding: 0.875rem 0;
+    position: relative;
+    z-index: 100;
+}
+
+.banner-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.banner-text {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+}
+
+.download-guide-btn {
+    background: white;
+    color: #059669;
+    border: none;
+    padding: 0.625rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.download-guide-btn:hover {
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.download-guide-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.download-guide-btn:hover svg {
+    transform: translateX(4px);
+}
+
+/* Hero Section */
+.impact-hero {
+    background: linear-gradient(180deg, #e0f2f1 0%, #f0fdf4 100%);
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.impact-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #047857;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    font-family: 'Manrope', sans-serif;
+}
+
+.impact-subtitle {
+    font-size: 1.5rem;
+    color: #059669;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+.impact-description {
+    font-size: 1.125rem;
+    color: #065f46;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Impact Stories Section */
+.impact-stories-section {
+    padding: 5rem 0;
+    background: white;
+}
+
+.impact-story {
+    background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+    border-radius: 20px;
+    padding: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #d1fae5;
+}
+
+.impact-story:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+.story-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid #e0f2f1;
+}
+
+.story-icon {
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, #047857, #059669);
+    width: 70px;
+    height: 70px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(4, 120, 87, 0.2);
+}
+
+.story-company {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #047857;
+    flex: 1;
+    font-family: 'Manrope', sans-serif;
+}
+
+.story-size {
+    font-size: 0.95rem;
+    color: #6b7280;
+    background: #f3f4f6;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+}
+
+.story-content {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.story-column {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.story-column:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+}
+
+.column-label {
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+}
+
+.column-label.before {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.column-label.after {
+    background: #ecfdf5;
+    color: #059669;
+}
+
+.story-text {
+    font-size: 1rem;
+    color: #374151;
+    line-height: 1.7;
+    font-family: 'Inter', sans-serif;
+}
+
+.story-divider {
+    width: 2px;
+    background: linear-gradient(180deg, #e0f2f1, #047857, #e0f2f1);
+    border-radius: 4px;
+}
+
+.story-stats {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding-top: 2rem;
+    border-top: 2px solid #e0f2f1;
+}
+
+.stat-item-inline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.stat-value {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #059669;
+    font-family: 'Manrope', sans-serif;
+}
+
+.stat-label-inline {
+    font-size: 0.95rem;
+    color: #6b7280;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Trusted By Section */
+.trusted-section {
+    padding: 4rem 0;
+    background: linear-gradient(180deg, #f9fafb 0%, #ffffff 100%);
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.trusted-title {
+    text-align: center;
+    font-size: 1.125rem;
+    color: #6b7280;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.trusted-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.logo-item {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #9ca3af;
+    padding: 1rem 2rem;
+    font-family: 'Manrope', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.logo-item:hover {
+    color: #047857;
+    transform: scale(1.1);
+}
+
+/* Why Choose Section */
+.why-choose-section {
+    padding: 5rem 0;
+    background: linear-gradient(180deg, #e0f2f1 0%, #f0fdf4 100%);
+}
+
+.section-title-center {
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: #047857;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    font-family: 'Manrope', sans-serif;
+}
+
+.why-choose-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.why-card {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.why-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+    border-color: #10b981;
+}
+
+.why-number {
+    font-size: 3.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #047857, #10b981);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+    font-family: 'Manrope', sans-serif;
+}
+
+.why-label {
+    font-size: 1rem;
+    color: #6b7280;
+    line-height: 1.6;
+    font-family: 'Inter', sans-serif;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #047857 0%, #059669 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.3;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-title {
+    font-size: 3.25rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    font-family: 'Manrope', sans-serif;
+}
+
+.cta-description {
+    font-size: 1.25rem;
+    color: #d1fae5;
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+    font-family: 'Inter', sans-serif;
+}
+
+.cta-button {
+    background: white;
+    color: #047857;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.125rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+    background: #f0fdf4;
+}
+
+.cta-button svg {
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover svg {
+    transform: translateX(6px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .story-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .story-divider {
+        height: 2px;
+        width: 100%;
+        background: linear-gradient(90deg, #e0f2f1, #047857, #e0f2f1);
+    }
+
+    .why-choose-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .impact-title {
+        font-size: 2.75rem;
+    }
+
+    .cta-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .impact-hero {
+        padding: 3rem 0;
+    }
+
+    .impact-title {
+        font-size: 2rem;
+    }
+
+    .impact-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .impact-description {
+        font-size: 1rem;
+    }
+
+    .impact-story {
+        padding: 2rem;
+    }
+
+    .story-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .story-company {
+        font-size: 1.5rem;
+    }
+
+    .story-stats {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .why-choose-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .cta-title {
+        font-size: 2rem;
+    }
+
+    .cta-description {
+        font-size: 1.125rem;
+    }
+
+    .trusted-logos {
+        gap: 2rem;
+    }
+
+    .logo-item {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .impact-title {
+        font-size: 1.75rem;
+    }
+
+    .section-title-center {
+        font-size: 2rem;
+    }
+
+    .story-icon {
+        font-size: 2rem;
+        width: 60px;
+        height: 60px;
+    }
+
+    .why-number {
+        font-size: 2.5rem;
+    }
+
+    .stat-value {
+        font-size: 2rem;
+    }
+}
