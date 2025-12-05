@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './Resources.css'
 
 const Resources = () => {
@@ -15,12 +16,30 @@ const Resources = () => {
     }
 
     const resources = [
-        { type: '📖 Guide', title: 'The Complete Guide to Budget Creation', description: 'Learn how to create a budget that actually works for your lifestyle and goals.' },
-        { type: '🧮 Calculator', title: 'Emergency Fund Calculator', description: 'Calculate exactly how much you should have saved for emergencies based on your situation.' },
-        { type: '🎥 Video', title: 'Investing 101 Masterclass', description: 'A complete video series on investment basics, from stocks to mutual funds to retirement accounts.' },
-        { type: '📝 Template', title: 'Monthly Budget Spreadsheet', description: 'Our most popular template - track income, expenses, and savings goals all in one place.' },
-        { type: '🎧 Podcast', title: 'Financial Wellness Podcast', description: 'Weekly episodes featuring expert interviews, success stories, and actionable advice.' },
-        { type: '📊 Assessment', title: 'Financial Health Check', description: 'Take our 5-minute assessment to understand your current financial wellness score.' }
+        {
+            type: '🧮 Calculator',
+            title: 'Emergency Fund Calculator',
+            description: 'Calculate exactly how much you should have saved for emergencies based on your situation.',
+            buttonText: 'Try Tool →',
+            link: '/tools/emergency-fund',
+            isExternal: false
+        },
+        {
+            type: '🧮 Calculator',
+            title: 'Tax Calculator',
+            description: 'Calculate income tax based on current tax slabs and understand your tax liability.',
+            buttonText: 'Try Tool →',
+            link: '/tools/tax-calculator',
+            isExternal: false
+        },
+        {
+            type: '📊 Assessment',
+            title: 'Financial Health Check',
+            description: 'Take our 5-minute assessment to understand your current financial wellness score.',
+            buttonText: 'Start Assessment →',
+            link: '/tools/financial-health-check',
+            isExternal: false
+        }
     ]
 
     return (
@@ -36,7 +55,11 @@ const Resources = () => {
                             <div className="resource-type">{resource.type}</div>
                             <h3>{resource.title}</h3>
                             <p>{resource.description}</p>
-                            <button className="btn-service">Download Free →</button>
+                            {resource.isExternal ? (
+                                <button className="btn-service">{resource.buttonText}</button>
+                            ) : (
+                                <Link to={resource.link} className="btn-service">{resource.buttonText}</Link>
+                            )}
                         </div>
                     ))}
                 </div>

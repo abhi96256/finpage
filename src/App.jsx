@@ -8,6 +8,9 @@ import OurWhyPage from './pages/OurWhyPage'
 import ContactPage from './pages/ContactPage'
 import Sign from './components/Signin/Sign'
 import Demo from './components/Demo/Demo'
+import EmergencyFund from './pages/Tools/EmergencyFund'
+import FinancialHealthCheck from './pages/Tools/FinancialHealthCheck'
+import TaxCalculator from './pages/Tools/TaxCalculator'
 import './App.css'
 
 function AppContent() {
@@ -25,6 +28,9 @@ function AppContent() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/signin" element={<Sign />} />
         <Route path="/book-demo" element={<Demo />} />
+        <Route path="/tools/emergency-fund" element={<EmergencyFund />} />
+        <Route path="/tools/financial-health-check" element={<FinancialHealthCheck />} />
+        <Route path="/tools/tax-calculator" element={<TaxCalculator />} />
       </Routes>
       {!hideNavbarFooter && <Footer />}
     </div>

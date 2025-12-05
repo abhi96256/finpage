@@ -1,0 +1,447 @@
+/* Tool Page Styles */
+.tool-page {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #f9fafb 0%, #ffffff 100%);
+    padding: 2rem 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.tool-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Back Link */
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #047857;
+    text-decoration: none;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+
+.back-link:hover {
+    color: #059669;
+    transform: translateX(-4px);
+}
+
+/* Tool Header */
+.tool-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.tool-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.tool-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1rem;
+    font-family: 'Manrope', sans-serif;
+}
+
+.tool-description {
+    font-size: 1.125rem;
+    color: #6b7280;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Tool Content */
+.tool-content {
+    background: white;
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border: 2px solid #e5e7eb;
+}
+
+/* Form Styles */
+.tool-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #374151;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.875rem 1.125rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+    background: white;
+    color: #374151;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #10b981;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+/* Calculate Button */
+.calculate-btn {
+    background: linear-gradient(135deg, #059669, #10b981);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.0625rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 8px 24px rgba(5, 150, 105, 0.3);
+    margin-top: 1rem;
+}
+
+.calculate-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(5, 150, 105, 0.4);
+}
+
+/* Result Container */
+.result-container {
+    background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+    border-radius: 20px;
+    padding: 3rem;
+    margin-top: 2rem;
+    border: 2px solid #d1fae5;
+    text-align: center;
+}
+
+.result-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #047857;
+    margin-bottom: 2rem;
+    font-family: 'Manrope', sans-serif;
+}
+
+.result-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.result-card {
+    background: white;
+    padding: 2rem 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    border: 2px solid #e5e7eb;
+}
+
+.result-card.recommended {
+    border-color: #10b981;
+    background: linear-gradient(135deg, #ecfdf5, #ffffff);
+}
+
+.result-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.result-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.75rem;
+}
+
+.result-value {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #047857;
+    margin-bottom: 0.5rem;
+    font-family: 'Manrope', sans-serif;
+    word-break: break-word;
+}
+
+.result-note {
+    font-size: 0.875rem;
+    color: #9ca3af;
+}
+
+.result-info {
+    background: #fffbeb;
+    border: 2px solid #fef3c7;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.result-info p {
+    margin: 0;
+    color: #92400e;
+    line-height: 1.6;
+}
+
+/* Tax Breakdown Styles */
+.tax-breakdown {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid #e5e7eb;
+}
+
+.breakdown-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    border-bottom: 1px dashed #e5e7eb;
+    font-size: 1rem;
+    color: #374151;
+}
+
+.breakdown-row:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.breakdown-row.total {
+    font-weight: 700;
+    color: #111827;
+    border-top: 2px solid #e5e7eb;
+    border-bottom: none;
+    margin-top: 0.5rem;
+    padding-top: 1rem;
+}
+
+.net-income-section {
+    margin: 2rem 0;
+}
+
+.net-income-card {
+    background: #064e3b;
+    color: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(6, 78, 59, 0.2);
+}
+
+.net-income-card h4 {
+    margin: 0 0 1rem 0;
+    font-size: 1.125rem;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+.net-amount {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    font-family: 'Manrope', sans-serif;
+}
+
+.monthly-amount {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* Progress Bar */
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #e5e7eb;
+    border-radius: 999px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(135deg, #059669, #10b981);
+    transition: width 0.3s ease;
+}
+
+.progress-text {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 2rem;
+}
+
+/* Question Container */
+.question-container {
+    padding: 2rem 0;
+}
+
+.question-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+}
+
+.options-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.option-button {
+    background: white;
+    border: 2px solid #e5e7eb;
+    padding: 1.25rem 1.5rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #374151;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+}
+
+.option-button:hover {
+    border-color: #10b981;
+    background: #f0fdf4;
+    color: #047857;
+    transform: translateX(4px);
+}
+
+/* Score Circle */
+.score-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 8px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem;
+    background: white;
+}
+
+.score-percentage {
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: 'Manrope', sans-serif;
+}
+
+.score-rating {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #6b7280;
+}
+
+.result-message {
+    font-size: 1.25rem;
+    color: #374151;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.result-details {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-bottom: 2rem;
+}
+
+.restart-btn {
+    background: linear-gradient(135deg, #059669, #10b981);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 8px 24px rgba(5, 150, 105, 0.3);
+}
+
+.restart-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(5, 150, 105, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tool-page {
+        padding: 1.5rem 1rem;
+    }
+
+    .tool-content {
+        padding: 2rem 1.5rem;
+    }
+
+    .tool-title {
+        font-size: 2rem;
+    }
+
+    .result-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .result-value {
+        font-size: 1.75rem;
+    }
+
+    .question-text {
+        font-size: 1.25rem;
+    }
+
+    .score-circle {
+        width: 160px;
+        height: 160px;
+    }
+
+    .score-percentage {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tool-icon {
+        font-size: 3rem;
+    }
+
+    .tool-title {
+        font-size: 1.75rem;
+    }
+
+    .tool-description {
+        font-size: 1rem;
+    }
+
+    .tool-content {
+        padding: 1.5rem 1rem;
+    }
+
+    .result-container {
+        padding: 2rem 1.5rem;
+    }
+}

@@ -1,17 +1,48 @@
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useState, useEffect, useRef } from 'react'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import './Navbar.css'
 
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
     const [isResourcesOpen, setIsResourcesOpen] = useState(false)
+    const location = useLocation()
+    const navigate = useNavigate()
+    const timeoutRef = useRef(null)
+
+    const handleMouseEnter = () => {
+        if (timeoutRef.current) {
+            clearTimeout(timeoutRef.current)
+        }
+        setIsResourcesOpen(true)
+    }
+
+    const handleMouseLeave = () => {
+        timeoutRef.current = setTimeout(() => {
+            setIsResourcesOpen(false)
+        }, 300)
+    }
 
     const scrollToSection = (sectionId) => {
-        const element = document.getElementById(sectionId)
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-            setIsMobileMenuOpen(false)
+        if (timeoutRef.current) {
+            clearTimeout(timeoutRef.current)
         }
+        setIsResourcesOpen(false)
+
+        if (location.pathname !== '/') {
+            navigate('/')
+            setTimeout(() => {
+                const element = document.getElementById(sectionId)
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                }
+            }, 100)
+        } else {
+            const element = document.getElementById(sectionId)
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+            }
+        }
+        setIsMobileMenuOpen(false)
     }
 
     const scrollToTop = () => {
@@ -38,8 +69,8 @@ const Navbar = () => {
 
                         <div
                             className="nav-dropdown"
-                            onMouseEnter={() => setIsResourcesOpen(true)}
-                            onMouseLeave={() => setIsResourcesOpen(false)}
+                            onMouseEnter={handleMouseEnter}
+                            onMouseLeave={handleMouseLeave}
                         >
                             <a className="nav-link dropdown-trigger">
                                 Resources
@@ -49,10 +80,10 @@ const Navbar = () => {
                             </a>
                             {isResourcesOpen && (
                                 <div className="dropdown-menu">
-                                    <a onClick={() => scrollToSection('resources')} className="dropdown-item">Financial Guides</a>
-                                    <a onClick={() => scrollToSection('resources')} className="dropdown-item">Webinars</a>
-                                    <a onClick={() => scrollToSection('resources')} className="dropdown-item">Blog</a>
-                                    <a onClick={() => scrollToSection('resources')} className="dropdown-item">Case Studies</a>
+                                    <a onClick={() => scrollToSection('resources')} className="dropdown-item">Tools</a>
+                                    <a onClick={() => scrollToSection('about')} className="dropdown-item">About Us</a>
+                                    <a onClick={() => scrollToSection('individuals')} className="dropdown-item">Our Services</a>
+                                    <a onClick={() => scrollToSection('resources')} className="dropdown-item">Videos</a>
                                 </div>
                             )}
                         </div>
